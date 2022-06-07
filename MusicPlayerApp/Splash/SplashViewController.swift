@@ -8,7 +8,7 @@
 import UIKit
 
 final class SplashViewController: UIViewController, Layouting {
-
+	
 	typealias ViewType = SplashView
 	
 	override func loadView() {
@@ -22,8 +22,8 @@ final class SplashViewController: UIViewController, Layouting {
 		
 		DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
 			self.layoutableView.activityIndicator.stopAnimating()
-		self.navigationController?.pushViewController(SongListViewController(), animated: true)
+			self.navigationController?.pushViewController(SongListViewController(), animated: true)
 		}
 	}
-
+	
 }

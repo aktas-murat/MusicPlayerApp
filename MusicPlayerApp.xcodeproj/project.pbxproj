@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		49416DFF284FEDC7008D8530 /* SoundModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49416DFE284FEDC7008D8530 /* SoundModel.swift */; };
 		497D428328494B2B0094115C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 497D428228494B2B0094115C /* AppDelegate.swift */; };
 		497D428728494B2B0094115C /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 497D428628494B2B0094115C /* SplashViewController.swift */; };
 		497D428C28494B2E0094115C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 497D428B28494B2E0094115C /* Assets.xcassets */; };
@@ -21,6 +22,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		49416DFE284FEDC7008D8530 /* SoundModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundModel.swift; sourceTree = "<group>"; };
 		497D427F28494B2B0094115C /* MusicPlayerApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MusicPlayerApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		497D428228494B2B0094115C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		497D428628494B2B0094115C /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
@@ -59,6 +61,14 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		49416DFD284FEDB0008D8530 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				49416DFE284FEDC7008D8530 /* SoundModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		497D427628494B2B0094115C = {
 			isa = PBXGroup;
 			children = (
@@ -80,6 +90,7 @@
 		497D428128494B2B0094115C /* MusicPlayerApp */ = {
 			isa = PBXGroup;
 			children = (
+				49416DFD284FEDB0008D8530 /* Models */,
 				497D429F2849699C0094115C /* SongList */,
 				497D429A2849510F0094115C /* Protocols */,
 				497D4297284950D40094115C /* Splash */,
@@ -267,6 +278,7 @@
 				497D42A5284969FD0094115C /* SongListTableViewCell.swift in Sources */,
 				497D4299284951030094115C /* SplashView.swift in Sources */,
 				497D42A3284969D80094115C /* SongListView.swift in Sources */,
+				49416DFF284FEDC7008D8530 /* SoundModel.swift in Sources */,
 				497D42A1284969C60094115C /* SongListViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
