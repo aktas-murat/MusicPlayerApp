@@ -12,7 +12,9 @@ final class SongListTableViewCell: UITableViewCell {
 	lazy var titleLabel: UILabel = {
 		
 		let titleLabel = UILabel()
-		titleLabel.backgroundColor = .yellow
+		titleLabel.textColor = .white
+		titleLabel.font = .systemFont(ofSize: 18, weight: .bold)
+//		titleLabel.backgroundColor = .yellow
 		return titleLabel
 		
 	}()
@@ -20,8 +22,26 @@ final class SongListTableViewCell: UITableViewCell {
 	lazy var logoImageView: UIImageView = {
 		
 		let logoImageView = UIImageView()
-		logoImageView.backgroundColor = .lightGray
 		return logoImageView
+	}()
+	
+	lazy var artistLabel: UILabel = {
+		
+		let artistLabel = UILabel()
+		artistLabel.textColor = .white
+		artistLabel.font = .systemFont(ofSize: 12, weight: .heavy)
+		return artistLabel
+		
+	}()
+	
+	lazy var playButton: UIButton = {
+		
+		let playButton = UIButton()
+		playButton.setImage(UIImage(named: "play"), for: .normal)
+		playButton.setImage(UIImage(named: "pause"), for: .selected)
+		playButton.tintColor = .white
+		
+		return playButton
 	}()
 	
 	override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
@@ -39,20 +59,35 @@ final class SongListTableViewCell: UITableViewCell {
 	
 	func setupViews() {
 		
-		addSubview(titleLabel)
-		addSubview(logoImageView)
+		playButton.addTarget(self, action: #selector(didTapPlayButton), for: .touchUpInside)
+		contentView.addSubview(titleLabel)
+		contentView.addSubview(logoImageView)
+		contentView.addSubview(artistLabel)
+		contentView.addSubview(playButton)
 	}
 	func setupLayout() {
 		
 		titleLabel.snp.makeConstraints { make in
-			make.right.equalToSuperview().inset(20)
+			make.right.equalTo(playButton.snp.left).offset(-10)
 			make.left.equalTo(logoImageView.snp.right).offset(20)
-			make.centerY.equalTo(logoImageView.snp.centerY)
+			make.bottom.equalTo(self.snp.centerY).offset(-5)
 		}
 		
 		logoImageView.snp.makeConstraints { make in
 			make.height.width.equalTo(70)
 			make.left.top.bottom.equalToSuperview().inset(10)
+		}
+		
+		artistLabel.snp.makeConstraints { make in
+			make.left.equalTo(logoImageView.snp.right).offset(20)
+			make.right.equalTo(playButton.snp.left).offset(-10)
+			make.top.equalTo(self.snp.centerY).offset(5)
+		}
+		
+		playButton.snp.makeConstraints { make in
+			make.height.width.equalTo(25)
+			make.right.equalToSuperview().inset(20)
+			make.centerY.equalTo(snp.centerY)
 		}
 		
 	}
@@ -65,6 +100,15 @@ extension SongListTableViewCell {
 	func configure(name: String, image: UIImage?, artistName: String, soundName: String) {
 		titleLabel.text = name
 		logoImageView.image = image
+		artistLabel.text = artistName
+	}
+}
+
+// MARK: - Actions
+extension SongListTableViewCell {
+	
+	@objc func didTapPlayButton() {
+		playButton.isSelected.toggle()
 		
 	}
 }
