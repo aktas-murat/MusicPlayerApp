@@ -113,6 +113,17 @@ final class SongDetailView: UIView, Layoutable {
 	
 }
 
+// MARK: - Configure
+extension SongDetailView {
+	
+	func configure(sound: SoundModel) {
+		
+		songNameLabel.text = sound.name
+		songImageView.image = sound.image
+		artistNameLabel.text = sound.artistName
+	}
+}
+
 // MARK: - Actions
 extension SongDetailView {
 	

@@ -97,10 +97,10 @@ final class SongListTableViewCell: UITableViewCell {
 // MARK: - Configure
 extension SongListTableViewCell {
 	
-	func configure(name: String, image: UIImage?, artistName: String, soundName: String) {
-		titleLabel.text = name
-		logoImageView.image = image
-		artistLabel.text = artistName
+	func configure(sound: SoundModel) {
+		titleLabel.text = sound.name
+		logoImageView.image = sound.image
+		artistLabel.text = sound.artistName
 	}
 }
 

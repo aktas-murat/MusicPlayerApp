@@ -17,7 +17,7 @@ final class SongListViewController: UIViewController, Layouting {
 	}
 	
 	var test: String?
-	var sounds: [SoundModel] = [SoundModel(name: "testsound1234", image: UIImage(named: "splash-logo"), artistName: "ssss", soundName: "")]
+	var sounds: [SoundModel] = [SoundModel(name: "sound" + String(1), image: UIImage(named: "image1"), artistName: "artist1", soundName: "")]
 	
 	override func viewDidLoad() {
 		super.viewDidLoad()
@@ -25,6 +25,7 @@ final class SongListViewController: UIViewController, Layouting {
 		layoutableView.tableView.delegate = self
 		
 		sounds.append(SoundModel(name: "testsound1", image: UIImage(named: "splash-logo"), artistName: "aaaaa", soundName: "bbbbb" ))
+		sounds.append(contentsOf: sounds)
 		sounds.append(contentsOf: sounds)
 		sounds.append(contentsOf: sounds)
 		
@@ -38,7 +39,13 @@ extension SongListViewController: UITableViewDataSource, UITableViewDelegate {
 	
 	func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
 		let cell = SongListTableViewCell(style: .default, reuseIdentifier: "SongListTableViewCell")
-		cell.configure(name: sounds[indexPath.row].name, image: sounds[indexPath.row].image, artistName: sounds[indexPath.row].artistName, soundName: "bbbb")
+		cell.configure(sound: sounds[indexPath.row])
 		return cell
 	}
+	func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+
+		self.navigationController?.pushViewController(SongDetailViewController(sound: sounds[indexPath.row]), animated: true)
+
+	}
+	
 }

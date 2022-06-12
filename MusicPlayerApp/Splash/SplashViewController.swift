@@ -22,7 +22,7 @@ final class SplashViewController: UIViewController, Layouting {
 		
 		DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
 			self.layoutableView.activityIndicator.stopAnimating()
-			self.navigationController?.pushViewController(SongDetailViewController(), animated: true)
+			self.navigationController?.pushViewController(SongListViewController(), animated: true)
 		}
 	}
 	
