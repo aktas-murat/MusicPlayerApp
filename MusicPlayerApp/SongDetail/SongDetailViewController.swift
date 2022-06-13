@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import AVKit
 
 final class SongDetailViewController: UIViewController, Layouting {
 	
@@ -17,6 +18,7 @@ final class SongDetailViewController: UIViewController, Layouting {
 	}
 	
 	var sound: SoundModel?
+	var player: AVPlayer?
 	
 	convenience init(sound: SoundModel) {
 		self.init()
@@ -26,6 +28,7 @@ final class SongDetailViewController: UIViewController, Layouting {
 	
 	override func viewDidLoad() {
 		super.viewDidLoad()
+		layoutableView.playButton.addTarget(self, action: #selector(didTapPlayButton), for: .touchUpInside)
 		
 		configure()
 	}
@@ -40,5 +43,24 @@ extension SongDetailViewController {
 		}
 
 		layoutableView.configure(sound: sound)
+	}
+}
+
+// MARK: - Actions
+extension SongDetailViewController {
+	
+	@objc func didTapPlayButton() {
+		layoutableView.playButton.isSelected.toggle()
+		guard let audioFilePath = Bundle.main.path(forResource: sound?.name, ofType: "mp3") else { return }
+		let soundUrl =  NSURL.fileURL(withPath: audioFilePath)
+		player = AVPlayer(url: soundUrl)
+		
+		if layoutableView.playButton.isSelected {
+			player?.play()
+	
+		} else {
+			player?.pause()
+		}
+		
 	}
 }

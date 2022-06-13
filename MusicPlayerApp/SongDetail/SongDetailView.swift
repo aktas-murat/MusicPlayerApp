@@ -63,7 +63,6 @@ final class SongDetailView: UIView, Layoutable {
 	
 	func setupViews() {
 		
-		playButton.addTarget(self, action: #selector(didTapPlayButton), for: .touchUpInside)
 		addSubview(songImageView)
 		addSubview(songNameLabel)
 		addSubview(artistNameLabel)
@@ -124,11 +123,4 @@ extension SongDetailView {
 	}
 }
 
-// MARK: - Actions
-extension SongDetailView {
-	
-	@objc func didTapPlayButton() {
-		playButton.isSelected.toggle()
-		
-	}
-}
+
