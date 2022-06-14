@@ -43,7 +43,7 @@ extension SongListViewController: UITableViewDataSource, UITableViewDelegate {
 	}
 	func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
 		
-		self.navigationController?.pushViewController(SongDetailViewController(sound: sounds[indexPath.row]), animated: true)
+		self.navigationController?.pushViewController(SongDetailViewController(sounds: sounds, selectedIndex: indexPath.row), animated: true)
 		
 	}
 	

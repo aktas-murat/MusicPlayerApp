@@ -17,41 +17,26 @@ final class SongDetailViewController: UIViewController, Layouting {
 		
 	}
 	
-	var sound: SoundModel?
 	var player: AVPlayer?
+	var selectedIndex: Int = 0
+	var sounds: [SoundModel] = []
 	
-	convenience init(sound: SoundModel) {
+	convenience init(sounds: [SoundModel], selectedIndex: Int) {
 		self.init()
-		self.sound = sound
+		self.sounds = sounds
+		self.selectedIndex = selectedIndex
 		
 	}
 	
 	override func viewDidLoad() {
 		super.viewDidLoad()
+		layoutableView.previousButton.addTarget(self, action: #selector(didTapPreviousButton), for: .touchUpInside)
 		layoutableView.playButton.addTarget(self, action: #selector(didTapPlayButton), for: .touchUpInside)
-		
+		layoutableView.nextButton.addTarget(self, action: #selector(didTapNexButton), for: .touchUpInside)
 		configure()
 	}
-}
-
-// MARK: - Configure
-extension SongDetailViewController {
-	
-	func configure() {
-		guard let sound = sound else {
-			return
-		}
-
-		layoutableView.configure(sound: sound)
-	}
-}
-
-// MARK: - Actions
-extension SongDetailViewController {
-	
-	@objc func didTapPlayButton() {
-		layoutableView.playButton.isSelected.toggle()
-		guard let audioFilePath = Bundle.main.path(forResource: sound?.name, ofType: "mp3") else { return }
+	func playSound() {
+		guard let audioFilePath = Bundle.main.path(forResource: sounds[selectedIndex].name, ofType: "mp3") else { return }
 		let soundUrl =  NSURL.fileURL(withPath: audioFilePath)
 		player = AVPlayer(url: soundUrl)
 		
@@ -62,5 +47,44 @@ extension SongDetailViewController {
 			player?.pause()
 		}
 		
+	}
+	
+}
+
+// MARK: - Configure
+extension SongDetailViewController {
+	
+	func configure() {
+		
+		let sound = sounds[selectedIndex]
+
+		layoutableView.configure(sound: sound)
+	}
+}
+
+// MARK: - Actions
+extension SongDetailViewController {
+	
+	@objc func didTapPlayButton() {
+		layoutableView.playButton.isSelected.toggle()
+	    playSound()
+	}
+	
+	@objc func didTapNexButton() {
+	
+		guard selectedIndex < sounds.count else {return}
+		selectedIndex += 1
+		playSound()
+		configure()
+
+	}
+	
+	@objc func didTapPreviousButton() {
+		
+		guard selectedIndex != 0 else {return}
+		
+		selectedIndex -= 1
+		playSound()
+		configure()
 	}
 }
