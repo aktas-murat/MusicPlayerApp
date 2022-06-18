@@ -20,6 +20,8 @@
 		4942481C2857D2ED0068B233 /* Sound10.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 494248132857D2ED0068B233 /* Sound10.mp3 */; };
 		4942481D2857D2ED0068B233 /* Sound3.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 494248142857D2ED0068B233 /* Sound3.mp3 */; };
 		4942481E2857D2ED0068B233 /* Sound8.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 494248152857D2ED0068B233 /* Sound8.mp3 */; };
+		4946E86F28593907009EE69C /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4946E86E28593907009EE69C /* LoginViewController.swift */; };
+		4946E8712859393C009EE69C /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4946E8702859393C009EE69C /* LoginView.swift */; };
 		497D428328494B2B0094115C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 497D428228494B2B0094115C /* AppDelegate.swift */; };
 		497D428728494B2B0094115C /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 497D428628494B2B0094115C /* SplashViewController.swift */; };
 		497D428C28494B2E0094115C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 497D428B28494B2E0094115C /* Assets.xcassets */; };
@@ -30,6 +32,8 @@
 		497D42A1284969C60094115C /* SongListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 497D42A0284969C60094115C /* SongListViewController.swift */; };
 		497D42A3284969D80094115C /* SongListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 497D42A2284969D80094115C /* SongListView.swift */; };
 		497D42A5284969FD0094115C /* SongListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 497D42A4284969FD0094115C /* SongListTableViewCell.swift */; };
+		49D07B57285E7EFE008153BE /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49D07B56285E7EFE008153BE /* SignInView.swift */; };
+		49D07B59285E7F17008153BE /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49D07B58285E7F17008153BE /* SignInViewController.swift */; };
 		B856FA7CCC11CD999A07B8FA /* Pods_MusicPlayerApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8449AA53A411D8F6094650D /* Pods_MusicPlayerApp.framework */; };
 /* End PBXBuildFile section */
 
@@ -47,6 +51,8 @@
 		494248132857D2ED0068B233 /* Sound10.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Sound10.mp3; sourceTree = "<group>"; };
 		494248142857D2ED0068B233 /* Sound3.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Sound3.mp3; sourceTree = "<group>"; };
 		494248152857D2ED0068B233 /* Sound8.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Sound8.mp3; sourceTree = "<group>"; };
+		4946E86E28593907009EE69C /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		4946E8702859393C009EE69C /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		497D427F28494B2B0094115C /* MusicPlayerApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MusicPlayerApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		497D428228494B2B0094115C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		497D428628494B2B0094115C /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
@@ -59,6 +65,8 @@
 		497D42A0284969C60094115C /* SongListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongListViewController.swift; sourceTree = "<group>"; };
 		497D42A2284969D80094115C /* SongListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongListView.swift; sourceTree = "<group>"; };
 		497D42A4284969FD0094115C /* SongListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongListTableViewCell.swift; sourceTree = "<group>"; };
+		49D07B56285E7EFE008153BE /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
+		49D07B58285E7F17008153BE /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		B8078F519D30984EBFA9CD43 /* Pods-MusicPlayerApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MusicPlayerApp.debug.xcconfig"; path = "Target Support Files/Pods-MusicPlayerApp/Pods-MusicPlayerApp.debug.xcconfig"; sourceTree = "<group>"; };
 		B8449AA53A411D8F6094650D /* Pods_MusicPlayerApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MusicPlayerApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D1EE1B4D4F4CE757D652B310 /* Pods-MusicPlayerApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MusicPlayerApp.release.xcconfig"; path = "Target Support Files/Pods-MusicPlayerApp/Pods-MusicPlayerApp.release.xcconfig"; sourceTree = "<group>"; };
@@ -128,6 +136,16 @@
 			path = Sounds;
 			sourceTree = "<group>";
 		};
+		4946E86D285938E7009EE69C /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				49D07B55285E7ECB008153BE /* Signin */,
+				4946E8702859393C009EE69C /* LoginView.swift */,
+				4946E86E28593907009EE69C /* LoginViewController.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
 		497D427628494B2B0094115C = {
 			isa = PBXGroup;
 			children = (
@@ -149,6 +167,7 @@
 		497D428128494B2B0094115C /* MusicPlayerApp */ = {
 			isa = PBXGroup;
 			children = (
+				4946E86D285938E7009EE69C /* Login */,
 				494248092857D2890068B233 /* Assets */,
 				490DDDEB285516C200CF244E /* SongDetail */,
 				49416DFD284FEDB0008D8530 /* Models */,
@@ -188,6 +207,15 @@
 				497D42A4284969FD0094115C /* SongListTableViewCell.swift */,
 			);
 			path = SongList;
+			sourceTree = "<group>";
+		};
+		49D07B55285E7ECB008153BE /* Signin */ = {
+			isa = PBXGroup;
+			children = (
+				49D07B56285E7EFE008153BE /* SignInView.swift */,
+				49D07B58285E7F17008153BE /* SignInViewController.swift */,
+			);
+			path = Signin;
 			sourceTree = "<group>";
 		};
 		83FEE1CE9D60BD6C1687D25C /* Frameworks */ = {
@@ -341,15 +369,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4946E86F28593907009EE69C /* LoginViewController.swift in Sources */,
 				497D428728494B2B0094115C /* SplashViewController.swift in Sources */,
 				497D429C284951EB0094115C /* Layoutable.swift in Sources */,
+				49D07B59285E7F17008153BE /* SignInViewController.swift in Sources */,
 				490DDDEF285516F000CF244E /* SongDetailViewController.swift in Sources */,
 				497D428328494B2B0094115C /* AppDelegate.swift in Sources */,
 				497D429E284951F90094115C /* Layouting.swift in Sources */,
 				497D42A5284969FD0094115C /* SongListTableViewCell.swift in Sources */,
 				497D4299284951030094115C /* SplashView.swift in Sources */,
+				49D07B57285E7EFE008153BE /* SignInView.swift in Sources */,
 				490DDDED285516DD00CF244E /* SongDetailView.swift in Sources */,
 				497D42A3284969D80094115C /* SongListView.swift in Sources */,
+				4946E8712859393C009EE69C /* LoginView.swift in Sources */,
 				49416DFF284FEDC7008D8530 /* SoundModel.swift in Sources */,
 				497D42A1284969C60094115C /* SongListViewController.swift in Sources */,
 			);

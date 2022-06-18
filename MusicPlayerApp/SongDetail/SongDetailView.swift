@@ -12,15 +12,16 @@ final class SongDetailView: UIView, Layoutable {
 	lazy var songImageView: UIImageView = {
 		
 		let songImageView = UIImageView()
-		songImageView.backgroundColor = .white
-		songImageView.image = UIImage(named: "splash-logo")
+//		songImageView.image = UIImage(named: "splash-logo")
 		return songImageView
 	}()
 	
 	lazy var songNameLabel: UILabel = {
 		
 		let songNameLabel = UILabel()
-		songNameLabel.backgroundColor = .white
+		songNameLabel.textColor = .white
+		songNameLabel.textAlignment = .center
+		songNameLabel.font = .systemFont(ofSize: 20, weight: .bold)
 		
 		return songNameLabel
 	}()
@@ -28,8 +29,9 @@ final class SongDetailView: UIView, Layoutable {
 	lazy var artistNameLabel: UILabel = {
 		
 		let artistNameLabel = UILabel()
-		artistNameLabel.backgroundColor = .blue
-		
+		artistNameLabel.font = .systemFont(ofSize: 16, weight: .bold)
+		artistNameLabel.textAlignment = .center
+		artistNameLabel.textColor = .white
 		return artistNameLabel
 	}()
 	
@@ -82,6 +84,7 @@ final class SongDetailView: UIView, Layoutable {
 		songNameLabel.snp.makeConstraints { make in
 			make.top.equalTo(songImageView.snp.bottom).offset(80)
 			make.left.right.equalToSuperview().inset(30)
+			
 			make.height.equalTo(30)
 		}
 		
@@ -122,5 +125,3 @@ extension SongDetailView {
 		artistNameLabel.text = sound.artistName
 	}
 }
-
-
