@@ -15,6 +15,7 @@ final class LoginViewController: UIViewController, Layouting {
 	override func viewDidLoad() {
 		super.viewDidLoad()
 		layoutableView.signinButton.addTarget(self, action: #selector(didTapsigninButton), for: .touchUpInside)
+		layoutableView.signupButton.addTarget(self, action: #selector(didTapsignupButton), for: .touchUpInside)
 	}
 }
 
@@ -24,6 +25,15 @@ extension LoginViewController {
 	@objc func didTapsigninButton() {
 		layoutableView.signinButton.isSelected.toggle()
 		self.navigationController?.pushViewController(SignInViewController(), animated: true)
+	}
+	
+}
+
+extension LoginViewController {
+	
+	@objc func didTapsignupButton() {
+		layoutableView.signupButton.isSelected.toggle()
+		self.navigationController?.pushViewController(SignUpViewController(), animated: true)
 	}
 	
 }

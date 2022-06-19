@@ -19,27 +19,27 @@ final class LoginView: UIView, Layoutable {
 	
 	lazy var signinButton: UIButton = {
 		
-		let loginButton = UIButton()
-		loginButton.backgroundColor = .white
-		loginButton.setTitle("Sign in", for: .normal)
-		loginButton.layer.cornerRadius = 15
-		loginButton.setTitleColor(.black, for: .normal)
-		loginButton.titleLabel?.font = UIFont.systemFont(ofSize: 15, weight: .bold)
-		return loginButton
+		let signinButton = UIButton()
+		signinButton.backgroundColor = .white
+		signinButton.setTitle("Sign in", for: .normal)
+		signinButton.layer.cornerRadius = 15
+		signinButton.setTitleColor(.black, for: .normal)
+		signinButton.titleLabel?.font = UIFont.systemFont(ofSize: 17, weight: .bold)
+		return signinButton
 	}()
 	
 	lazy var signupButton: UIButton = {
 		
-		let loginButton = UIButton()
-		loginButton.backgroundColor = .white
-		loginButton.setTitle("Sign up", for: .normal)
-		loginButton.layer.cornerRadius = 15
-		loginButton.setTitleColor(.black, for: .normal)
-		loginButton.titleLabel?.font = UIFont.systemFont(ofSize: 15, weight: .bold)
-		return loginButton
+		let signupButton = UIButton()
+		signupButton.backgroundColor = .white
+		signupButton.setTitle("Sign up", for: .normal)
+		signupButton.layer.cornerRadius = 15
+		signupButton.setTitleColor(.black, for: .normal)
+		signupButton.titleLabel?.font = UIFont.systemFont(ofSize: 17, weight: .bold)
+		return signupButton
 	}()
 	
-	lazy var loginImageView:UIImageView = {
+	lazy var loginImageView: UIImageView = {
 		let loginImageView = UIImageView()
 		loginImageView.image = UIImage(named: "imagelogin2")
 		return loginImageView
@@ -66,14 +66,14 @@ final class LoginView: UIView, Layoutable {
 		signinButton.snp.makeConstraints { make in
 			make.centerX.equalToSuperview()
 			make.top.equalTo(logoImageView.snp.bottom).offset(100)
-			make.width.equalTo(90)
+			make.width.equalTo(140)
 			make.height.equalTo(45)
 		}
 		
 		signupButton.snp.makeConstraints { make in
 			make.centerX.equalToSuperview()
 			make.top.equalTo(signinButton.snp.bottom).offset(20)
-			make.width.equalTo(90)
+			make.width.equalTo(140)
 			make.height.equalTo(45)
 		}
 		
