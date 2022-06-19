@@ -7,7 +7,7 @@
 
 import UIKit
 
-final class SignUpViewController : UIViewController, Layouting {
+final class SignUpViewController: UIViewController, Layouting {
 	
 	typealias ViewType = SignUpView
 	override func loadView() {
@@ -15,6 +15,17 @@ final class SignUpViewController : UIViewController, Layouting {
 	}
 	override func viewDidLoad() {
 		super.viewDidLoad()
+		layoutableView.signUpButton.addTarget(self, action: #selector(didTapsignUpButton), for: .touchUpInside)
+	}
+	
+}
+
+// MARK: - Actions
+extension SignUpViewController {
+	
+	@objc func didTapsignUpButton() {
+		layoutableView.signUpButton.isSelected.toggle()
+		self.navigationController?.pushViewController(SignInViewController(), animated: true)
 	}
 	
 }
