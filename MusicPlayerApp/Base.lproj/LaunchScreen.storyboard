@@ -16,13 +16,20 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" placeholderIntrinsicWidth="200" placeholderIntrinsicHeight="200" preservesSuperviewLayoutMargins="YES" image="splash-logo" translatesAutoresizingMaskIntoConstraints="NO" id="tJg-ij-EAB" propertyAccessControl="none">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="200" placeholderIntrinsicHeight="200" preservesSuperviewLayoutMargins="YES" image="splash-logo" translatesAutoresizingMaskIntoConstraints="NO" id="tJg-ij-EAB" propertyAccessControl="none">
                                 <rect key="frame" x="107" y="348" width="200" height="200"/>
-                                <autoresizingMask key="autoresizingMask"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="Dis-tT-myJ"/>
+                                    <constraint firstAttribute="height" constant="200" id="lss-I3-Kdq"/>
+                                </constraints>
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="labelColor"/>
+                        <constraints>
+                            <constraint firstItem="tJg-ij-EAB" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="Gaa-78-GC1"/>
+                            <constraint firstItem="tJg-ij-EAB" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="XT3-Nd-YOI"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>

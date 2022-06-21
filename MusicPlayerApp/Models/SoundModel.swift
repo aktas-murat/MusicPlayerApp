@@ -8,16 +8,22 @@
 import Foundation
 import UIKit
 
-struct SoundModel {
+struct SoundModel: Codable {
 	var name: String
-	var image: UIImage?
+	var imageName: String
 	var artistName: String
 	var soundName: String
 	
-	init(name: String, image: UIImage?, artistName: String, soundName: String) {
-		self.name = name
-		self.image = image
-		self.artistName = artistName
-		self.soundName = soundName
+}
+
+// MARK: - Helpers
+extension SoundModel {
+
+	static func sounds() -> [SoundModel] {
+		guard let path = Bundle.main.path(forResource: "sounds", ofType: "json") else { return [] }
+		let url = URL(fileURLWithPath: path)
+		guard let json = try? Data(contentsOf: url) else { return [] }
+		return (try? JSONDecoder().decode([SoundModel].self, from: json)) ?? []
 	}
+
 }

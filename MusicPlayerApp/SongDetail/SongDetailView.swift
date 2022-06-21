@@ -64,7 +64,7 @@ final class SongDetailView: UIView, Layoutable {
 	}()
 	
 	func setupViews() {
-		
+		backgroundColor = .black
 		addSubview(songImageView)
 		addSubview(songNameLabel)
 		addSubview(artistNameLabel)
@@ -121,7 +121,7 @@ extension SongDetailView {
 	func configure(sound: SoundModel) {
 		
 		songNameLabel.text = sound.name
-		songImageView.image = sound.image
+		songImageView.image = UIImage(named: sound.imageName)
 		artistNameLabel.text = sound.artistName
 	}
 }

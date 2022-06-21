@@ -99,7 +99,7 @@ extension SongListTableViewCell {
 	
 	func configure(sound: SoundModel) {
 		titleLabel.text = sound.name
-		logoImageView.image = sound.image
+		logoImageView.image = UIImage(named: sound.imageName)
 		artistLabel.text = sound.artistName
 	}
 }

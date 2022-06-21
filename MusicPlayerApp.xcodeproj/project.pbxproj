@@ -9,22 +9,8 @@
 /* Begin PBXBuildFile section */
 		490DDDED285516DD00CF244E /* SongDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 490DDDEC285516DD00CF244E /* SongDetailView.swift */; };
 		490DDDEF285516F000CF244E /* SongDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 490DDDEE285516F000CF244E /* SongDetailViewController.swift */; };
+		4910284628612A0700946B42 /* sounds.json in Resources */ = {isa = PBXBuildFile; fileRef = 4910284528612A0700946B42 /* sounds.json */; };
 		49416DFF284FEDC7008D8530 /* SoundModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49416DFE284FEDC7008D8530 /* SoundModel.swift */; };
-		4942480C2857D2D80068B233 /* Sound1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4942480B2857D2D80068B233 /* Sound1.mp3 */; };
-		494248162857D2ED0068B233 /* Sound222.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4942480D2857D2EC0068B233 /* Sound222.mp3 */; };
-		494248172857D2ED0068B233 /* Sound7.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4942480E2857D2ED0068B233 /* Sound7.mp3 */; };
-		494248182857D2ED0068B233 /* Sound6.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4942480F2857D2ED0068B233 /* Sound6.mp3 */; };
-		494248192857D2ED0068B233 /* Sound44.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 494248102857D2ED0068B233 /* Sound44.mp3 */; };
-		4942481A2857D2ED0068B233 /* Sound5.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 494248112857D2ED0068B233 /* Sound5.mp3 */; };
-		4942481B2857D2ED0068B233 /* Sound9.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 494248122857D2ED0068B233 /* Sound9.mp3 */; };
-		4942481C2857D2ED0068B233 /* Sound10.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 494248132857D2ED0068B233 /* Sound10.mp3 */; };
-		4942481D2857D2ED0068B233 /* Sound333.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 494248142857D2ED0068B233 /* Sound333.mp3 */; };
-		4942481E2857D2ED0068B233 /* Sound8.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 494248152857D2ED0068B233 /* Sound8.mp3 */; };
-		494688E7285F87C20084A5B7 /* Sound4.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 494688E6285F87C20084A5B7 /* Sound4.mp3 */; };
-		494688EA285F95540084A5B7 /* Adele - Easy On Me .mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 494688E8285F95530084A5B7 /* Adele - Easy On Me .mp3 */; };
-		494688EB285F95540084A5B7 /* sezen-aksu-her-seye-ragmen-official-video.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 494688E9285F95540084A5B7 /* sezen-aksu-her-seye-ragmen-official-video.mp3 */; };
-		494688ED285F958A0084A5B7 /* Sound3.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 494688EC285F958A0084A5B7 /* Sound3.mp3 */; };
-		494688EF285F96520084A5B7 /* NF - How Could You Leave Us.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 494688EE285F96520084A5B7 /* NF - How Could You Leave Us.mp3 */; };
 		4946E86F28593907009EE69C /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4946E86E28593907009EE69C /* LoginViewController.swift */; };
 		4946E8712859393C009EE69C /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4946E8702859393C009EE69C /* LoginView.swift */; };
 		497D428328494B2B0094115C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 497D428228494B2B0094115C /* AppDelegate.swift */; };
@@ -41,28 +27,26 @@
 		49B9536A285F4E2900DBDD8B /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B95369285F4E2900DBDD8B /* SignUpViewController.swift */; };
 		49D07B57285E7EFE008153BE /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49D07B56285E7EFE008153BE /* SignInView.swift */; };
 		49D07B59285E7F17008153BE /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49D07B58285E7F17008153BE /* SignInViewController.swift */; };
+		49D88B8128625B2A00D1ECE2 /* YasminLevy-AdioKerida.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 49D88B7528625B2600D1ECE2 /* YasminLevy-AdioKerida.mp3 */; };
+		49D88B8228625B2A00D1ECE2 /* lostfrequencies-WhereAreYouNow.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 49D88B7628625B2700D1ECE2 /* lostfrequencies-WhereAreYouNow.mp3 */; };
+		49D88B8328625B2A00D1ECE2 /* Adele-EasyOnMe.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 49D88B7728625B2700D1ECE2 /* Adele-EasyOnMe.mp3 */; };
+		49D88B8428625B2A00D1ECE2 /* Köfn-BiTekBenAnlarımmp3.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 49D88B7828625B2700D1ECE2 /* Köfn-BiTekBenAnlarımmp3.mp3 */; };
+		49D88B8528625B2A00D1ECE2 /* Karsu-InciTanem.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 49D88B7928625B2800D1ECE2 /* Karsu-InciTanem.mp3 */; };
+		49D88B8628625B2A00D1ECE2 /* Sago-Meftun.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 49D88B7A28625B2800D1ECE2 /* Sago-Meftun.mp3 */; };
+		49D88B8728625B2A00D1ECE2 /* Sebnem-Yagmurlar.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 49D88B7B28625B2800D1ECE2 /* Sebnem-Yagmurlar.mp3 */; };
+		49D88B8828625B2A00D1ECE2 /* PotterPayper-Gangsteritus.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 49D88B7C28625B2900D1ECE2 /* PotterPayper-Gangsteritus.mp3 */; };
+		49D88B8928625B2A00D1ECE2 /* GonulAkkor-NasılGectiHabersiz.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 49D88B7D28625B2900D1ECE2 /* GonulAkkor-NasılGectiHabersiz.mp3 */; };
+		49D88B8A28625B2A00D1ECE2 /* SezenAksu-HerseyeRagmen.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 49D88B7E28625B2900D1ECE2 /* SezenAksu-HerseyeRagmen.mp3 */; };
+		49D88B8B28625B2A00D1ECE2 /* NF-HowCould YouLeave Us.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 49D88B7F28625B2A00D1ECE2 /* NF-HowCould YouLeave Us.mp3 */; };
+		49D88B8C28625B2A00D1ECE2 /* Shakira-DontLie.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 49D88B8028625B2A00D1ECE2 /* Shakira-DontLie.mp3 */; };
 		B856FA7CCC11CD999A07B8FA /* Pods_MusicPlayerApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8449AA53A411D8F6094650D /* Pods_MusicPlayerApp.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		490DDDEC285516DD00CF244E /* SongDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongDetailView.swift; sourceTree = "<group>"; };
 		490DDDEE285516F000CF244E /* SongDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongDetailViewController.swift; sourceTree = "<group>"; };
+		4910284528612A0700946B42 /* sounds.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = sounds.json; sourceTree = "<group>"; };
 		49416DFE284FEDC7008D8530 /* SoundModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundModel.swift; sourceTree = "<group>"; };
-		4942480B2857D2D80068B233 /* Sound1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Sound1.mp3; sourceTree = "<group>"; };
-		4942480D2857D2EC0068B233 /* Sound222.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Sound222.mp3; sourceTree = "<group>"; };
-		4942480E2857D2ED0068B233 /* Sound7.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Sound7.mp3; sourceTree = "<group>"; };
-		4942480F2857D2ED0068B233 /* Sound6.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Sound6.mp3; sourceTree = "<group>"; };
-		494248102857D2ED0068B233 /* Sound44.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Sound44.mp3; sourceTree = "<group>"; };
-		494248112857D2ED0068B233 /* Sound5.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Sound5.mp3; sourceTree = "<group>"; };
-		494248122857D2ED0068B233 /* Sound9.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Sound9.mp3; sourceTree = "<group>"; };
-		494248132857D2ED0068B233 /* Sound10.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Sound10.mp3; sourceTree = "<group>"; };
-		494248142857D2ED0068B233 /* Sound333.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Sound333.mp3; sourceTree = "<group>"; };
-		494248152857D2ED0068B233 /* Sound8.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Sound8.mp3; sourceTree = "<group>"; };
-		494688E6285F87C20084A5B7 /* Sound4.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Sound4.mp3; sourceTree = "<group>"; };
-		494688E8285F95530084A5B7 /* Adele - Easy On Me .mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Adele - Easy On Me .mp3"; sourceTree = "<group>"; };
-		494688E9285F95540084A5B7 /* sezen-aksu-her-seye-ragmen-official-video.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "sezen-aksu-her-seye-ragmen-official-video.mp3"; sourceTree = "<group>"; };
-		494688EC285F958A0084A5B7 /* Sound3.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Sound3.mp3; sourceTree = "<group>"; };
-		494688EE285F96520084A5B7 /* NF - How Could You Leave Us.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "NF - How Could You Leave Us.mp3"; sourceTree = "<group>"; };
 		4946E86E28593907009EE69C /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		4946E8702859393C009EE69C /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		497D427F28494B2B0094115C /* MusicPlayerApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MusicPlayerApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -81,6 +65,18 @@
 		49B95369285F4E2900DBDD8B /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		49D07B56285E7EFE008153BE /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
 		49D07B58285E7F17008153BE /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
+		49D88B7528625B2600D1ECE2 /* YasminLevy-AdioKerida.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "YasminLevy-AdioKerida.mp3"; sourceTree = "<group>"; };
+		49D88B7628625B2700D1ECE2 /* lostfrequencies-WhereAreYouNow.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "lostfrequencies-WhereAreYouNow.mp3"; sourceTree = "<group>"; };
+		49D88B7728625B2700D1ECE2 /* Adele-EasyOnMe.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Adele-EasyOnMe.mp3"; sourceTree = "<group>"; };
+		49D88B7828625B2700D1ECE2 /* Köfn-BiTekBenAnlarımmp3.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Köfn-BiTekBenAnlarımmp3.mp3"; sourceTree = "<group>"; };
+		49D88B7928625B2800D1ECE2 /* Karsu-InciTanem.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Karsu-InciTanem.mp3"; sourceTree = "<group>"; };
+		49D88B7A28625B2800D1ECE2 /* Sago-Meftun.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Sago-Meftun.mp3"; sourceTree = "<group>"; };
+		49D88B7B28625B2800D1ECE2 /* Sebnem-Yagmurlar.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Sebnem-Yagmurlar.mp3"; sourceTree = "<group>"; };
+		49D88B7C28625B2900D1ECE2 /* PotterPayper-Gangsteritus.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "PotterPayper-Gangsteritus.mp3"; sourceTree = "<group>"; };
+		49D88B7D28625B2900D1ECE2 /* GonulAkkor-NasılGectiHabersiz.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "GonulAkkor-NasılGectiHabersiz.mp3"; sourceTree = "<group>"; };
+		49D88B7E28625B2900D1ECE2 /* SezenAksu-HerseyeRagmen.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "SezenAksu-HerseyeRagmen.mp3"; sourceTree = "<group>"; };
+		49D88B7F28625B2A00D1ECE2 /* NF-HowCould YouLeave Us.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "NF-HowCould YouLeave Us.mp3"; sourceTree = "<group>"; };
+		49D88B8028625B2A00D1ECE2 /* Shakira-DontLie.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Shakira-DontLie.mp3"; sourceTree = "<group>"; };
 		B8078F519D30984EBFA9CD43 /* Pods-MusicPlayerApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MusicPlayerApp.debug.xcconfig"; path = "Target Support Files/Pods-MusicPlayerApp/Pods-MusicPlayerApp.debug.xcconfig"; sourceTree = "<group>"; };
 		B8449AA53A411D8F6094650D /* Pods_MusicPlayerApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MusicPlayerApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D1EE1B4D4F4CE757D652B310 /* Pods-MusicPlayerApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MusicPlayerApp.release.xcconfig"; path = "Target Support Files/Pods-MusicPlayerApp/Pods-MusicPlayerApp.release.xcconfig"; sourceTree = "<group>"; };
@@ -116,6 +112,14 @@
 			path = SongDetail;
 			sourceTree = "<group>";
 		};
+		49102844286129F800946B42 /* Jsons */ = {
+			isa = PBXGroup;
+			children = (
+				4910284528612A0700946B42 /* sounds.json */,
+			);
+			path = Jsons;
+			sourceTree = "<group>";
+		};
 		49416DFD284FEDB0008D8530 /* Models */ = {
 			isa = PBXGroup;
 			children = (
@@ -127,6 +131,7 @@
 		494248092857D2890068B233 /* Assets */ = {
 			isa = PBXGroup;
 			children = (
+				49102844286129F800946B42 /* Jsons */,
 				4942480A2857D2A00068B233 /* Sounds */,
 				497D428B28494B2E0094115C /* Assets.xcassets */,
 			);
@@ -136,21 +141,18 @@
 		4942480A2857D2A00068B233 /* Sounds */ = {
 			isa = PBXGroup;
 			children = (
-				4942480B2857D2D80068B233 /* Sound1.mp3 */,
-				4942480D2857D2EC0068B233 /* Sound222.mp3 */,
-				494248142857D2ED0068B233 /* Sound333.mp3 */,
-				494688EC285F958A0084A5B7 /* Sound3.mp3 */,
-				494248102857D2ED0068B233 /* Sound44.mp3 */,
-				494688E6285F87C20084A5B7 /* Sound4.mp3 */,
-				494248112857D2ED0068B233 /* Sound5.mp3 */,
-				4942480F2857D2ED0068B233 /* Sound6.mp3 */,
-				4942480E2857D2ED0068B233 /* Sound7.mp3 */,
-				494688EE285F96520084A5B7 /* NF - How Could You Leave Us.mp3 */,
-				494688E8285F95530084A5B7 /* Adele - Easy On Me .mp3 */,
-				494688E9285F95540084A5B7 /* sezen-aksu-her-seye-ragmen-official-video.mp3 */,
-				494248152857D2ED0068B233 /* Sound8.mp3 */,
-				494248122857D2ED0068B233 /* Sound9.mp3 */,
-				494248132857D2ED0068B233 /* Sound10.mp3 */,
+				49D88B7728625B2700D1ECE2 /* Adele-EasyOnMe.mp3 */,
+				49D88B7D28625B2900D1ECE2 /* GonulAkkor-NasılGectiHabersiz.mp3 */,
+				49D88B7928625B2800D1ECE2 /* Karsu-InciTanem.mp3 */,
+				49D88B7828625B2700D1ECE2 /* Köfn-BiTekBenAnlarımmp3.mp3 */,
+				49D88B7628625B2700D1ECE2 /* lostfrequencies-WhereAreYouNow.mp3 */,
+				49D88B7F28625B2A00D1ECE2 /* NF-HowCould YouLeave Us.mp3 */,
+				49D88B7C28625B2900D1ECE2 /* PotterPayper-Gangsteritus.mp3 */,
+				49D88B7A28625B2800D1ECE2 /* Sago-Meftun.mp3 */,
+				49D88B7B28625B2800D1ECE2 /* Sebnem-Yagmurlar.mp3 */,
+				49D88B7E28625B2900D1ECE2 /* SezenAksu-HerseyeRagmen.mp3 */,
+				49D88B8028625B2A00D1ECE2 /* Shakira-DontLie.mp3 */,
+				49D88B7528625B2600D1ECE2 /* YasminLevy-AdioKerida.mp3 */,
 			);
 			path = Sounds;
 			sourceTree = "<group>";
@@ -316,23 +318,21 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				494688EA285F95540084A5B7 /* Adele - Easy On Me .mp3 in Resources */,
-				494688E7285F87C20084A5B7 /* Sound4.mp3 in Resources */,
-				4942481A2857D2ED0068B233 /* Sound5.mp3 in Resources */,
-				4942481B2857D2ED0068B233 /* Sound9.mp3 in Resources */,
-				494688ED285F958A0084A5B7 /* Sound3.mp3 in Resources */,
+				49D88B8928625B2A00D1ECE2 /* GonulAkkor-NasılGectiHabersiz.mp3 in Resources */,
+				49D88B8828625B2A00D1ECE2 /* PotterPayper-Gangsteritus.mp3 in Resources */,
+				49D88B8228625B2A00D1ECE2 /* lostfrequencies-WhereAreYouNow.mp3 in Resources */,
+				49D88B8728625B2A00D1ECE2 /* Sebnem-Yagmurlar.mp3 in Resources */,
 				497D428F28494B2E0094115C /* LaunchScreen.storyboard in Resources */,
-				4942481C2857D2ED0068B233 /* Sound10.mp3 in Resources */,
-				494248182857D2ED0068B233 /* Sound6.mp3 in Resources */,
-				494248162857D2ED0068B233 /* Sound222.mp3 in Resources */,
-				4942480C2857D2D80068B233 /* Sound1.mp3 in Resources */,
-				494688EF285F96520084A5B7 /* NF - How Could You Leave Us.mp3 in Resources */,
-				4942481E2857D2ED0068B233 /* Sound8.mp3 in Resources */,
-				494688EB285F95540084A5B7 /* sezen-aksu-her-seye-ragmen-official-video.mp3 in Resources */,
+				4910284628612A0700946B42 /* sounds.json in Resources */,
+				49D88B8128625B2A00D1ECE2 /* YasminLevy-AdioKerida.mp3 in Resources */,
+				49D88B8528625B2A00D1ECE2 /* Karsu-InciTanem.mp3 in Resources */,
+				49D88B8A28625B2A00D1ECE2 /* SezenAksu-HerseyeRagmen.mp3 in Resources */,
+				49D88B8628625B2A00D1ECE2 /* Sago-Meftun.mp3 in Resources */,
+				49D88B8328625B2A00D1ECE2 /* Adele-EasyOnMe.mp3 in Resources */,
 				497D428C28494B2E0094115C /* Assets.xcassets in Resources */,
-				494248192857D2ED0068B233 /* Sound44.mp3 in Resources */,
-				494248172857D2ED0068B233 /* Sound7.mp3 in Resources */,
-				4942481D2857D2ED0068B233 /* Sound333.mp3 in Resources */,
+				49D88B8428625B2A00D1ECE2 /* Köfn-BiTekBenAnlarımmp3.mp3 in Resources */,
+				49D88B8C28625B2A00D1ECE2 /* Shakira-DontLie.mp3 in Resources */,
+				49D88B8B28625B2A00D1ECE2 /* NF-HowCould YouLeave Us.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

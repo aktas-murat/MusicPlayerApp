@@ -23,11 +23,8 @@ final class SongListViewController: UIViewController, Layouting {
 		super.viewDidLoad()
 		layoutableView.tableView.dataSource = self
 		layoutableView.tableView.delegate = self
-		
-		for index in 1...11 {
-			let sound = SoundModel(name: "Sound" + String(index), image: UIImage(named: "image" + String(index)),            artistName: "artist" + String(index) , soundName: "Sound" + String(index))
-			sounds.append(sound)
-		}
+	
+		sounds = SoundModel.sounds()
 	}
 }
 

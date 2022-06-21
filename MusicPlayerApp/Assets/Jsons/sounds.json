@@ -1,0 +1,67 @@
+[
+	{
+		"name": "Easy On Me",
+		"artistName": "Adele",
+		"soundName": "Adele-EasyOnMe",
+		"imageName": "image1",
+	},
+	{
+		"name": "Nasıl Geçti Habersiz",
+		"artistName": "Gönül Akkor",
+		"soundName": "GonulAkkor-NasılGectiHabersiz",
+		"imageName": "image2",
+	},
+	{
+		"name": "inci Tanem",
+		"artistName": "Karsu",
+		"soundName": "Karsu-InciTanem",
+		"imageName": "image3",
+	},{
+		"name": "Dont Lie",
+		"artistName": "Shakira",
+		"soundName": "Shakira-DontLie",
+		"imageName": "image4",
+	},
+	{
+		"name": "Bi Tek Ben Anlarım",
+		"artistName": "Köfn",
+		"soundName": "Köfn-BiTekBenAnlarım",
+		"imageName": "image5",
+	},
+	{
+		"name": "Gangsteritus",
+		"artistName": "Potter Payper",
+		"soundName": "PotterPayper-Gangsteritus",
+		"imageName": "image6",
+	},{
+		"name": "How Could You As",
+		"artistName": "NF",
+		"soundName": "NF-HowCould YouLeave Us",
+		"imageName": "image7",
+	},
+	{
+		"name": "Meftun",
+		"artistName": "Sagopa Kajmer",
+		"soundName": "Sago-Meftun",
+		"imageName": "image8",
+	},
+	{
+		"name": "Her Şeye Rağmen",
+		"artistName": "Sezen Aksu",
+		"soundName": "SezenAksu-HerseyeRagmen",
+		"imageName": "image9",
+	},{
+		"name": "Adio Kerida",
+		"artistName": "Yasmin Levy",
+		"soundName": "YasminLevy-AdioKerida",
+		"imageName": "image10",
+	},
+	{
+		"name": "Yağmurlar",
+		"artistName": "Şebnem Ferah",
+		"soundName": "Sebnem-Yagmurlar",
+		"imageName": "image11",
+	}
+	
+]
+ 

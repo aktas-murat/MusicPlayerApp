@@ -36,7 +36,7 @@ final class SongDetailViewController: UIViewController, Layouting {
 		configure()
 	}
 	func playSound() {
-		guard let audioFilePath = Bundle.main.path(forResource: sounds[selectedIndex].name, ofType: "mp3") else { return }
+		guard let audioFilePath = Bundle.main.path(forResource: sounds[selectedIndex].soundName, ofType: "mp3") else { return }
 		let soundUrl =  NSURL.fileURL(withPath: audioFilePath)
 		player = AVPlayer(url: soundUrl)
 		

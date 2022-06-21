@@ -19,6 +19,7 @@ final class SongListView: UIView, Layoutable {
 	
 	func setupViews() {
 		addSubview(tableView)
+		backgroundColor = .black
 	}
 	
 	func setupLayout() {
