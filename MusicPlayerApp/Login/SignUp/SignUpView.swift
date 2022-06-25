@@ -72,8 +72,7 @@ final class SignUpView: UIView, Layoutable {
 		passwordTextField.textColor = .black
 		passwordTextField.backgroundColor = .white
 		passwordTextField.textAlignment = .center
-		passwordTextField.isSecureTextEntry = true
-		
+
 		return passwordTextField
 		
 	}()
@@ -81,13 +80,12 @@ final class SignUpView: UIView, Layoutable {
 	lazy var confirmPasswordTextField: UITextField = {
 		let confirmPasswordTextField = UITextField()
 		confirmPasswordTextField.placeholder = "Confirm Password"
-		confirmPasswordTextField.isSecureTextEntry = true
 		confirmPasswordTextField.font = UIFont.systemFont(ofSize: 15, weight: .semibold)
 		confirmPasswordTextField.textColor = .black
 		confirmPasswordTextField.backgroundColor = .white
 		confirmPasswordTextField.textAlignment = .center
 		confirmPasswordTextField.isSecureTextEntry = true
-		
+		confirmPasswordTextField.isSecureTextEntry = true
 		return confirmPasswordTextField
 		
 	}()

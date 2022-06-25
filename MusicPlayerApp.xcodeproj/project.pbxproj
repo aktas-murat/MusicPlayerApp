@@ -39,6 +39,7 @@
 		49D88B8A28625B2A00D1ECE2 /* SezenAksu-HerseyeRagmen.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 49D88B7E28625B2900D1ECE2 /* SezenAksu-HerseyeRagmen.mp3 */; };
 		49D88B8B28625B2A00D1ECE2 /* NF-HowCould YouLeave Us.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 49D88B7F28625B2A00D1ECE2 /* NF-HowCould YouLeave Us.mp3 */; };
 		49D88B8C28625B2A00D1ECE2 /* Shakira-DontLie.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 49D88B8028625B2A00D1ECE2 /* Shakira-DontLie.mp3 */; };
+		49D88B8E2862685600D1ECE2 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49D88B8D2862685600D1ECE2 /* UserModel.swift */; };
 		B856FA7CCC11CD999A07B8FA /* Pods_MusicPlayerApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8449AA53A411D8F6094650D /* Pods_MusicPlayerApp.framework */; };
 /* End PBXBuildFile section */
 
@@ -77,6 +78,7 @@
 		49D88B7E28625B2900D1ECE2 /* SezenAksu-HerseyeRagmen.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "SezenAksu-HerseyeRagmen.mp3"; sourceTree = "<group>"; };
 		49D88B7F28625B2A00D1ECE2 /* NF-HowCould YouLeave Us.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "NF-HowCould YouLeave Us.mp3"; sourceTree = "<group>"; };
 		49D88B8028625B2A00D1ECE2 /* Shakira-DontLie.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Shakira-DontLie.mp3"; sourceTree = "<group>"; };
+		49D88B8D2862685600D1ECE2 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
 		B8078F519D30984EBFA9CD43 /* Pods-MusicPlayerApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MusicPlayerApp.debug.xcconfig"; path = "Target Support Files/Pods-MusicPlayerApp/Pods-MusicPlayerApp.debug.xcconfig"; sourceTree = "<group>"; };
 		B8449AA53A411D8F6094650D /* Pods_MusicPlayerApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MusicPlayerApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D1EE1B4D4F4CE757D652B310 /* Pods-MusicPlayerApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MusicPlayerApp.release.xcconfig"; path = "Target Support Files/Pods-MusicPlayerApp/Pods-MusicPlayerApp.release.xcconfig"; sourceTree = "<group>"; };
@@ -124,6 +126,7 @@
 			isa = PBXGroup;
 			children = (
 				49416DFE284FEDC7008D8530 /* SoundModel.swift */,
+				49D88B8D2862685600D1ECE2 /* UserModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -419,6 +422,7 @@
 				49B95368285F4D9900DBDD8B /* SignUpView.swift in Sources */,
 				4946E8712859393C009EE69C /* LoginView.swift in Sources */,
 				49416DFF284FEDC7008D8530 /* SoundModel.swift in Sources */,
+				49D88B8E2862685600D1ECE2 /* UserModel.swift in Sources */,
 				497D42A1284969C60094115C /* SongListViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
