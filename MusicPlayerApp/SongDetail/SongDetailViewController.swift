@@ -72,7 +72,7 @@ extension SongDetailViewController {
 	
 	@objc func didTapNexButton() {
 	
-		guard selectedIndex < sounds.count else {return}
+		guard selectedIndex < sounds.count-1 else {return}
 		selectedIndex += 1
 		playSound()
 		configure()

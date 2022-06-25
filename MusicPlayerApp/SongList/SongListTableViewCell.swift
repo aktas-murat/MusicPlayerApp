@@ -7,7 +7,17 @@
 
 import UIKit
 
+protocol SongListTableViewCellDelegate: AnyObject {
+	
+	func didTapPlayButton(sound: SoundModel)
+	func didTapStopButton()
+}
+
 final class SongListTableViewCell: UITableViewCell {
+	
+	weak var delegate: SongListTableViewCellDelegate?
+	
+	var sound: SoundModel?
 	
 	lazy var titleLabel: UILabel = {
 		
@@ -101,6 +111,7 @@ extension SongListTableViewCell {
 		titleLabel.text = sound.name
 		logoImageView.image = UIImage(named: sound.imageName)
 		artistLabel.text = sound.artistName
+		self.sound = sound
 	}
 }
 
@@ -109,6 +120,14 @@ extension SongListTableViewCell {
 	
 	@objc func didTapPlayButton() {
 		playButton.isSelected.toggle()
+		guard let sound = sound else { return }
+		if playButton.isSelected {
+			delegate?.didTapPlayButton(sound: sound)
+		}else{
+			delegate?.didTapStopButton()
+		}
 		
+
 	}
+	
 }
