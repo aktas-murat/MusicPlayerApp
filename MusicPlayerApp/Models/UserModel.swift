@@ -8,7 +8,6 @@
 import Foundation
 import UIKit
 
-
 struct UserModel {
 	
 	var name: String

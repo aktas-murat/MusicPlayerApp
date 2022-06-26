@@ -20,7 +20,7 @@ final class SongListViewController: UIViewController, Layouting {
 	var sounds: [SoundModel] = []
 	
 	var player: AVPlayer?
-	var selectedIndex: Int = 0
+	var selectedIndex: Int = -1
 	
 	override func viewDidLoad() {
 		super.viewDidLoad()
@@ -38,7 +38,8 @@ extension SongListViewController: UITableViewDataSource, UITableViewDelegate {
 	
 	func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
 		let cell = SongListTableViewCell(style: .default, reuseIdentifier: "SongListTableViewCell")
-		cell.configure(sound: sounds[indexPath.row])
+		cell.configure(sound: sounds[indexPath.row], selectedIndex: indexPath.row)
+		cell.playButton.isSelected = indexPath.row == selectedIndex
 		cell.delegate = self
 		return cell
 	}
@@ -48,22 +49,47 @@ extension SongListViewController: UITableViewDataSource, UITableViewDelegate {
 		
 	}
 	
-	func playSound(sound: SoundModel) {
-		guard let audioFilePath = Bundle.main.path(forResource: sound.soundName, ofType: "mp3") else { return }
+	func playSound() {
+		guard let audioFilePath = Bundle.main.path(forResource: sounds[selectedIndex].soundName, ofType: "mp3") else { return }
 		let soundUrl = NSURL.fileURL(withPath: audioFilePath)
 		player = AVPlayer(url: soundUrl)
 	    player?.play()
 	}
 	
+	func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+		let selectedCell = cell as? SongListTableViewCell
+		selectedCell?.playButton.isSelected = indexPath.row == selectedIndex
+	}
+	
 }
 
 extension SongListViewController: SongListTableViewCellDelegate {
+	func didTapPlayButton(selectedIndex: Int) {
+		self.selectedIndex = selectedIndex
+		playSound()
+		closeOtherButtons()
+		layoutableView.tableView.reloadData()
+		
+	}
+	
 	func didTapStopButton() {
 		player?.pause()
 	}
 	
-	func didTapPlayButton(sound: SoundModel) {
-		
-		playSound(sound: sound)
+}
+
+// MARK: - Helpers
+
+extension SongListViewController {
+	
+	func closeOtherButtons() {
+		let visibleCells = layoutableView.tableView.visibleCells
+		for (index, visibleCell) in visibleCells.enumerated() {
+			if index != selectedIndex {
+				let cell = visibleCell as? SongListTableViewCell
+				cell?.playButton.isSelected = false
+				
+			}
+		}
 	}
 }

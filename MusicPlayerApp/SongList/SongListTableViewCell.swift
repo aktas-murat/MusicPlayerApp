@@ -9,7 +9,7 @@ import UIKit
 
 protocol SongListTableViewCellDelegate: AnyObject {
 	
-	func didTapPlayButton(sound: SoundModel)
+	func didTapPlayButton(selectedIndex: Int)
 	func didTapStopButton()
 }
 
@@ -17,7 +17,7 @@ final class SongListTableViewCell: UITableViewCell {
 	
 	weak var delegate: SongListTableViewCellDelegate?
 	
-	var sound: SoundModel?
+	var selectedIndex: Int?
 	
 	lazy var titleLabel: UILabel = {
 		
@@ -107,11 +107,12 @@ final class SongListTableViewCell: UITableViewCell {
 // MARK: - Configure
 extension SongListTableViewCell {
 	
-	func configure(sound: SoundModel) {
+	func configure(sound: SoundModel, selectedIndex:Int) {
 		titleLabel.text = sound.name
 		logoImageView.image = UIImage(named: sound.imageName)
 		artistLabel.text = sound.artistName
-		self.sound = sound
+		self.selectedIndex = selectedIndex
+		
 	}
 }
 
@@ -120,14 +121,14 @@ extension SongListTableViewCell {
 	
 	@objc func didTapPlayButton() {
 		playButton.isSelected.toggle()
-		guard let sound = sound else { return }
+		guard let selectedIndex = selectedIndex else{return}
 		if playButton.isSelected {
-			delegate?.didTapPlayButton(sound: sound)
-		}else{
+			delegate?.didTapPlayButton(selectedIndex: selectedIndex)
+		} else {
 			delegate?.didTapStopButton()
 		}
 		
-
 	}
 	
 }
+
