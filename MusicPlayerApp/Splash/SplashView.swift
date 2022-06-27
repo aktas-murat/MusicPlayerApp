@@ -13,8 +13,8 @@ final class SplashView: UIView, Layoutable {
 		
 		let imageView = UIImageView()
 		
-		imageView.image = UIImage(named: "splash-logo")
-		imageView.backgroundColor = .systemBlue
+		imageView.image = UIImage(named: "newlogo")
+		imageView.backgroundColor = .white
 		return imageView
 		
 	}()

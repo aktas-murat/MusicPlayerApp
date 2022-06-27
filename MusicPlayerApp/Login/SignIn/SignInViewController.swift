@@ -14,8 +14,11 @@ final class SignInViewController: UIViewController, Layouting {
 	}
 	override func viewDidLoad() {
 		super.viewDidLoad()
+//		UIApplication.shared.windows.first(where: { $0.isKeyWindow })?.addSubview(layoutableView)
 		layoutableView.signinButton.addTarget(self, action: #selector(didTapsigninButton), for: .touchUpInside)
 		
+		layoutableView.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(didTapView(_:))))
+			   layoutableView.isUserInteractionEnabled = true
 	}
 }
 
@@ -32,6 +35,13 @@ extension SignInViewController {
 		self.navigationController?.pushViewController(SongListViewController(), animated: true)
 	}
 	
+	@objc func didTapView (_ sender: UITapGestureRecognizer) {
+		print("ClickCheck")
+		let userEmail = UserDefaults.standard.object(forKey: "email") as? String ?? ""
+		print(userEmail)
+		layoutableView.endEditing(true)
+	}
+	
 }
 
 // MARK: - Helpers
@@ -46,7 +56,6 @@ extension SignInViewController {
 	}
 	
 	func checkUser () -> Bool {
-//		let defaults = UserDefaults.standard
 		
 		let userEmail = UserDefaults.standard.object(forKey: "email") as? String ?? ""
 		let userPassword = UserDefaults.standard.object(forKey: "password") as? String ?? ""

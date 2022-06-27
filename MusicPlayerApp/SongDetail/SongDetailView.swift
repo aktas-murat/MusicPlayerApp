@@ -12,7 +12,6 @@ final class SongDetailView: UIView, Layoutable {
 	lazy var songImageView: UIImageView = {
 		
 		let songImageView = UIImageView()
-//		songImageView.image = UIImage(named: "splash-logo")
 		return songImageView
 	}()
 	

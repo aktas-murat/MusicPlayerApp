@@ -13,7 +13,7 @@ final class LoginView: UIView, Layoutable {
 		
 		let logoImageView = UIImageView()
 		logoImageView.backgroundColor = .white
-		logoImageView.image = UIImage(named: "splash-logo")
+		logoImageView.image = UIImage(named: "newlogo")
 		return logoImageView
 	}()
 	
