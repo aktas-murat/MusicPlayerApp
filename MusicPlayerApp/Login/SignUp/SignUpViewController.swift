@@ -15,6 +15,7 @@ final class SignUpViewController: UIViewController, Layouting {
 	}
 	override func viewDidLoad() {
 		super.viewDidLoad()
+		
 		layoutableView.signUpButton.addTarget(self, action: #selector(didTapsignUpButton), for: .touchUpInside)
 		layoutableView.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(didTapView(_:))))
 		layoutableView.isUserInteractionEnabled = true

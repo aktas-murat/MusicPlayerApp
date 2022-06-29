@@ -17,8 +17,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="200" placeholderIntrinsicHeight="200" preservesSuperviewLayoutMargins="YES" image="splash-logo" translatesAutoresizingMaskIntoConstraints="NO" id="tJg-ij-EAB" propertyAccessControl="none">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="200" placeholderIntrinsicHeight="200" preservesSuperviewLayoutMargins="YES" image="newlogo" translatesAutoresizingMaskIntoConstraints="NO" id="tJg-ij-EAB" propertyAccessControl="none">
                                 <rect key="frame" x="107" y="348" width="200" height="200"/>
+                                <color key="tintColor" systemColor="systemGroupedBackgroundColor"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="200" id="Dis-tT-myJ"/>
                                     <constraint firstAttribute="height" constant="200" id="lss-I3-Kdq"/>
@@ -39,9 +40,12 @@
         </scene>
     </scenes>
     <resources>
-        <image name="splash-logo" width="1920" height="1080"/>
+        <image name="newlogo" width="925" height="768"/>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGroupedBackgroundColor">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

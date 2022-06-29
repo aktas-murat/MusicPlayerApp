@@ -7,7 +7,7 @@
 
 import UIKit
 
-final class SplashViewController: UIViewController, Layouting {
+final class SplashViewController: UIViewController, Layouting, UIGestureRecognizerDelegate {
 	
 	typealias ViewType = SplashView
 	
@@ -17,6 +17,9 @@ final class SplashViewController: UIViewController, Layouting {
 	
 	override func viewDidLoad() {
 		super.viewDidLoad()
+		self.navigationController?.isNavigationBarHidden = true
+		self.navigationController?.interactivePopGestureRecognizer?.isEnabled = true
+		self.navigationController?.interactivePopGestureRecognizer?.delegate = self
 		
 		layoutableView.activityIndicator.startAnimating()
 		
