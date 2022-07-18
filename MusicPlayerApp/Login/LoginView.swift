@@ -16,14 +16,7 @@ final class LoginView: UIView, Layoutable {
 		return navigationLabel
 	}()
 	
-	lazy var backButton: UIButton = {
-		
-		let backButton = UIButton()
-		backButton.setImage(UIImage(named: "backimage"),for: .normal)
-//		backButton.backgroundColor = .white
-		return backButton
-		
-	}()
+
 	
 	lazy var logoImageView: UIImageView = {
 		
@@ -31,7 +24,7 @@ final class LoginView: UIView, Layoutable {
 		logoImageView.backgroundColor = .white
 		logoImageView.image = UIImage(named: "newlogo")
 		return logoImageView
-	}()sanesss
+	}()
 	
 	lazy var signinButton: UIButton = {
 		
@@ -68,7 +61,6 @@ final class LoginView: UIView, Layoutable {
 		addSubview(signinButton)
 		addSubview(signupButton)
 		addSubview(navigationLabel)
-		addSubview(backButton)
 		
 	}
 	
@@ -104,11 +96,7 @@ final class LoginView: UIView, Layoutable {
 			make.height.equalTo(100)
 			make.width.equalToSuperview()
 		}
-		backButton.snp.makeConstraints { make in
-			make.width.height.equalTo(30)
-			make.left.equalToSuperview().inset(30)
-			make.bottom.equalTo(navigationLabel.snp.bottom).offset(-5)
-		}
+		
 		
 	}
 }

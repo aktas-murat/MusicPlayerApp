@@ -27,7 +27,7 @@ final class LoginViewController: UIViewController, Layouting, UIGestureRecognize
 extension LoginViewController {
 	
 	@objc func didTapsigninButton() {
-		layoutableView.signinButton.isSelected.toggle()
+//		layoutableView.signinButton.isSelected.toggle()
 		self.navigationController?.pushViewController(SignInViewController(), animated: true)
 	}
 	
@@ -36,7 +36,7 @@ extension LoginViewController {
 extension LoginViewController {
 	
 	@objc func didTapsignupButton() {
-		layoutableView.signupButton.isSelected.toggle()
+//		layoutableView.signupButton.isSelected.toggle()
 		self.navigationController?.pushViewController(SignUpViewController(), animated: true)
 	}
 	

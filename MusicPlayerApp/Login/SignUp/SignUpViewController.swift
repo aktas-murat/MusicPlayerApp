@@ -17,6 +17,7 @@ final class SignUpViewController: UIViewController, Layouting {
 		super.viewDidLoad()
 		
 		layoutableView.signUpButton.addTarget(self, action: #selector(didTapsignUpButton), for: .touchUpInside)
+		layoutableView.backButton.addTarget(self, action: #selector(didTapBackButton), for: .touchUpInside)
 		layoutableView.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(didTapView(_:))))
 		layoutableView.isUserInteractionEnabled = true
 	}
@@ -40,6 +41,10 @@ extension SignUpViewController {
 		
 		self.navigationController?.pushViewController(SongListViewController(), animated: true)
 		saveUserInfoToUserDefault()
+	}
+	@objc func didTapBackButton() {
+		
+		self.navigationController?.popViewController(animated: true)
 	}
 	
 	@objc func didTapView (_ sender: UITapGestureRecognizer) {

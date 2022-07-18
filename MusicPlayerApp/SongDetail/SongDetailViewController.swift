@@ -33,6 +33,7 @@ final class SongDetailViewController: UIViewController, Layouting {
 		layoutableView.previousButton.addTarget(self, action: #selector(didTapPreviousButton), for: .touchUpInside)
 		layoutableView.playButton.addTarget(self, action: #selector(didTapPlayButton), for: .touchUpInside)
 		layoutableView.nextButton.addTarget(self, action: #selector(didTapNexButton), for: .touchUpInside)
+		layoutableView.backButton.addTarget(self, action: #selector(didTapBackButton), for: .touchUpInside)
 		configure()
 	}
 	func playSound() {
@@ -86,5 +87,9 @@ extension SongDetailViewController {
 		selectedIndex -= 1
 		playSound()
 		configure()
+	}
+	@objc func didTapBackButton() {
+		
+		self.navigationController?.popViewController(animated: true)
 	}
 }

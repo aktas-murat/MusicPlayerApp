@@ -26,6 +26,7 @@ final class SongListViewController: UIViewController, Layouting {
 		super.viewDidLoad()
 		layoutableView.tableView.dataSource = self
 		layoutableView.tableView.delegate = self
+		layoutableView.backButton.addTarget(self, action: #selector(didTapBackButton), for: .touchUpInside)
 	
 		sounds = SoundModel.sounds()
 	}
@@ -43,6 +44,12 @@ extension SongListViewController: UITableViewDataSource, UITableViewDelegate {
 		cell.delegate = self
 		return cell
 	}
+	
+	@objc func didTapBackButton() {
+		
+		self.navigationController?.popViewController(animated: true)
+	}
+
 	func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
 		
 		self.navigationController?.pushViewController(SongDetailViewController(sounds: sounds, selectedIndex: indexPath.row), animated: true)

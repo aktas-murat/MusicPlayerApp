@@ -107,7 +107,7 @@ final class SongListTableViewCell: UITableViewCell {
 // MARK: - Configure
 extension SongListTableViewCell {
 	
-	func configure(sound: SoundModel, selectedIndex:Int) {
+	func configure(sound: SoundModel, selectedIndex: Int) {
 		titleLabel.text = sound.name
 		logoImageView.image = UIImage(named: sound.imageName)
 		artistLabel.text = sound.artistName
@@ -121,14 +121,12 @@ extension SongListTableViewCell {
 	
 	@objc func didTapPlayButton() {
 		playButton.isSelected.toggle()
-		guard let selectedIndex = selectedIndex else{return}
+		guard let selectedIndex = selectedIndex else {return}
 		if playButton.isSelected {
 			delegate?.didTapPlayButton(selectedIndex: selectedIndex)
 		} else {
 			delegate?.didTapStopButton()
 		}
-		
 	}
-	
 }
 

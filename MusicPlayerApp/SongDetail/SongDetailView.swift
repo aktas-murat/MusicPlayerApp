@@ -9,6 +9,22 @@ import UIKit
 
 final class SongDetailView: UIView, Layoutable {
 	
+	lazy var navigationLabel: UILabel = {
+		
+		let navigationLabel = UILabel()
+//    	navigationLabel.backgroundColor = .blue
+		return navigationLabel
+	}()
+	
+	lazy var backButton: UIButton = {
+		
+		let backButton = UIButton()
+		backButton.setImage(UIImage(named: "backimage"), for: .normal)
+//		backButton.backgroundColor = .white
+		return backButton
+		
+	}()
+	
 	lazy var songImageView: UIImageView = {
 		
 		let songImageView = UIImageView()
@@ -64,12 +80,15 @@ final class SongDetailView: UIView, Layoutable {
 	
 	func setupViews() {
 		backgroundColor = .black
+		addSubview(navigationLabel)
+		addSubview(backButton)
 		addSubview(songImageView)
 		addSubview(songNameLabel)
 		addSubview(artistNameLabel)
 		addSubview(playButton)
 		addSubview(nextButton)
 		addSubview(previousButton)
+		
 	}
 	
 	func setupLayout() {
@@ -110,6 +129,17 @@ final class SongDetailView: UIView, Layoutable {
 			make.width.height.equalTo(50)
 		}
 		
+		navigationLabel.snp.makeConstraints { make in
+			make.top.equalToSuperview()
+			make.height.equalTo(100)
+			make.width.equalToSuperview()
+		}
+		
+		backButton.snp.makeConstraints { make in
+			make.width.height.equalTo(30)
+			make.left.equalToSuperview().inset(30)
+			make.bottom.equalTo(navigationLabel.snp.bottom).offset(-5)
+		}
 	}
 	
 }
